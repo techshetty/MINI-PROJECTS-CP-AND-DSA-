@@ -18,7 +18,7 @@ int main(){
     printf("Enter a string: "); 
     gets(s);    //string input
     printf("Enter the shift factor: ");
-    scanf("%d",&k); //shift fator input
+    scanf("%d",&k); //shift factor input
     printf("Encode or Decode? (e or d): ");
     scanf(" %c",&o); //user choice input
     if(o=='e') enc(s,k);
