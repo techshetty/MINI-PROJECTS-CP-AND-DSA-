@@ -22,7 +22,7 @@ int main(){
     scanf("\n"); //handles the newline character
     gets(s);    //string input
     printf("Enter the number of shifts: ");
-    scanf("%d",&k); //shift fator input
+    scanf("%d",&k); //shift factor input
     if(strcmp(o,"encode")==0) enc(s,k);
     else if(strcmp(o,"decode")==0) dec(s,k);
     printf("Encoded string: %s",s); //printing the modified string
