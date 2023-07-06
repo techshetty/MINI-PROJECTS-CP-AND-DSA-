@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 //encode funtion
 void enc(char s[],int k){
 for(int i=0;s[i]!='\0';i++){
@@ -14,16 +15,16 @@ for(int i=0;s[i]!='\0';i++){
 }
 }
 int main(){
-    char s[99],o; int k;
-    printf("Enter a string: "); 
+    char s[99],o[7]; int k;
+    printf("Type encode to encrypt and decode to decrypt: ");
+    scanf("%s",o); //user choice input
+    printf("Type the message: "); 
+    scanf("\n");
     gets(s);    //string input
-    printf("Enter the shift factor: ");
-    scanf("%d",&k); //shift factor input
-    printf("Encode or Decode? (e or d): ");
-    scanf(" %c",&o); //user choice input
-    if(o=='e') enc(s,k);
-    else if(o=='d') dec(s,k);
-    else {printf("Invalid option"); return 0;}
+    printf("Enter the number of shifts: ");
+    scanf("%d",&k); //shift fator input
+    if(strcmp(o,"encode")==0) enc(s,k);
+    else if(strcmp(o,"decode")==0) dec(s,k);
     printf("Encoded string: %s",s); //printing the modified string
     return 0;
 }
