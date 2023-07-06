@@ -19,7 +19,7 @@ int main(){
     printf("Type encode to encrypt and decode to decrypt: ");
     scanf("%s",o); //user choice input
     printf("Type the message: "); 
-    scanf("\n");
+    scanf("\n"); //handles the newline character
     gets(s);    //string input
     printf("Enter the number of shifts: ");
     scanf("%d",&k); //shift fator input
