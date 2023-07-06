@@ -15,7 +15,7 @@ for(int i=0;s[i]!='\0';i++){
 }
 int main(){
     char s[99],o; int k;
-    printf("Enter a string:: "); 
+    printf("Enter a string: "); 
     gets(s);    //string input
     printf("Enter the shift factor: ");
     scanf("%d",&k); //shift fator input
