@@ -19,12 +19,13 @@ int main(){
     printf("Type encode to encrypt and decode to decrypt: ");
     scanf("%s",o); //user choice input
     printf("Type the message: "); 
-    scanf("\n"); //handles the newline character
+    scanf("\n");
     gets(s);    //string input
     printf("Enter the number of shifts: ");
     scanf("%d",&k); //shift factor input
-    if(strcmp(o,"encode")==0) enc(s,k);
-    else if(strcmp(o,"decode")==0) dec(s,k);
-    printf("Encoded string: %s",s); //printing the modified string
+    if(strcmp(o,"encode")==0) {enc(s,k); //printing modified string
+    printf("The encoded message is %s",s);}
+    else if(strcmp(o,"decode")==0) {dec(s,k);
+    printf("The decoded message is %s",s);}
     return 0;
 }
