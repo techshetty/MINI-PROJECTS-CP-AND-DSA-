@@ -2,7 +2,7 @@ import java.util.*;
 public class morsetxt{
     public static void main(String[] args) {
        Scanner sc= new Scanner(System.in);
-       HashMap<Character, String> cm = new HashMap<>() {{
+       HashMap<Character,String> cm = new HashMap<>(){{
         put('A', ".-"); put('B', "-..."); put('C', "-.-."); put('D', "-.."); put('E', ".");
         put('F', "..-."); put('G', "--."); put('H', "...."); put('I', ".."); put('J', ".---");
         put('K', "-.-"); put('L', ".-.."); put('M', "--"); put('N', "-."); put('O', "---");
@@ -12,7 +12,7 @@ public class morsetxt{
         put('5', "....."); put('6', "-...."); put('7', "--..."); put('8', "---.."); put('9', "----.");
         put(' '," ");
     }};
-    HashMap<String, Character> mc = new HashMap<>() {{
+    HashMap<String,Character> mc = new HashMap<>(){{
         put(".-", 'A'); put("-...", 'B'); put("-.-.", 'C'); put("-..", 'D'); put(".", 'E');
         put("..-.", 'F'); put("--.", 'G'); put("....", 'H'); put("..", 'I'); put(".---", 'J');
         put("-.-", 'K'); put(".-..", 'L'); put("--", 'M'); put("-.", 'N'); put("---", 'O');
@@ -23,11 +23,11 @@ public class morsetxt{
         put(" ", ' ');
     }};
         System.out.println("MENU");
-        System.out.println("Type 1 to convert Text to Morse code: ");
+        System.out.println("Type 1 to convert text to Morse code: ");
         System.out.println("Type 2 to convert Morse code to text: ");
         System.out.println("Type 3 to exit: ");
         int x=sc.nextInt();
-        sc.nextLine();
+        sc.nextLine(); //handles newline char
         if(x==1) {
             System.out.println("Enter the text you want to convert: ");
             String txt =sc.nextLine().toUpperCase();
@@ -52,8 +52,5 @@ public class morsetxt{
         else{
             System.out.println("EXITING...");
         }
-
-
     }
-
     }
