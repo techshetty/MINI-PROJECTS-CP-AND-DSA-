@@ -38,12 +38,12 @@ public class morsetxt{
             System.out.printf("%s in morse code is: %s",txt,morse);
         }
         else if(x==2){
-            System.out.println("Enter the morse code you want to convert: ");
+            System.out.println("Enter the morse code with space for letter: ");
             String mrs =sc.nextLine();
             String fin="";
             String[] mrw= mrs.split(" ");
             for(String c: mrw){
-               String s=(""+mc.getOrDefault(c,' '));
+               String s=(""+mc.getOrDefault(c,' ')); //converts single-char to string.If key isnt present in the map, it appends space
                 fin+=s;
             }
             System.out.printf("%s in text is: %s",mrs,fin);
