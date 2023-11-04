@@ -25,7 +25,7 @@ public class morsetxt{
         System.out.println("MENU");
         System.out.println("Type 1 to convert Text to Morse code: ");
         System.out.println("Type 2 to convert Morse code to text: ");
-        System.out.println("Type 3 to exit: ");;
+        System.out.println("Type 3 to exit: ");
         int x=sc.nextInt();
         sc.nextLine();
         if(x==1) {
